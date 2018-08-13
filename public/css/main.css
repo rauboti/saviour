@@ -1,0 +1,45 @@
+html {
+  background: rgba(150, 150, 160, 1);
+}
+nav, body {
+  text-align: center;
+}
+section, menu {
+  display: inline-block;
+}
+input, button, .container, .field-result {
+  border-radius: 3px;
+}
+input, button, .field-result, .text-label-basic {
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  font-family: Rajdhani;
+}
+input, .field-result {
+  width: 100px;
+  outline: none;
+  text-align: left;
+}
+input {
+  background: rgba(150, 150, 160, 1);
+}
+.field-result {
+  background: rgba(150, 150, 160, .2);
+}
+button {
+  cursor: pointer;
+}
+.menuButton {
+  display: block;
+  width: 100%;
+}
+.container, button {
+  background: rgba(80, 80, 90, 1);
+  margin: 5px;
+}
+.text-label-basic {
+  text-align: right;
+}
