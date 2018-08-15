@@ -14,15 +14,15 @@
         <table>
           <tr>
             <td class="tr-label-basic">Current:</td>
-            <td class="tr-textbox-basic"><input id="txtCurrentBalance" type="number" class="input-basic field" /></td>
+            <td class="tr-textbox-basic"><input id="txtCurrentBalance" type="number" pattern="\d*" class="input-basic field" /></td>
           </tr>
           <tr>
             <td class="tr-label-basic">Goal:</td>
-            <td class="tr-textbox-basic"><input id="txtGoal" type="number" class="input-basic field" /></td>
+            <td class="tr-textbox-basic"><input id="txtGoal" type="number" pattern="\d*" class="input-basic field" /></td>
           </tr>
           <tr>
             <th class="tr-label-basic">Remaining:</th>
-            <td class="tr-textbox-basic"><input id="txtRemainingBalance" type="number" class="field-result field" readonly tabindex="-1"/></td>
+            <td class="tr-textbox-basic"><input id="txtRemainingBalance" type="number" pattern="\d*" class="field-result field" readonly tabindex="-1"/></td>
           </tr>
         </table>
       </div>
@@ -31,19 +31,19 @@
         <table>
           <tr>
             <td class="tr-label-basic">Interest:</td>
-            <td class="tr-textbox-basic"><input id="txtInterest" type="number" class="input-loan field" /></td>
+            <td class="tr-textbox-basic"><input id="txtInterest" type="number" pattern="\d*" class="input-loan field" /></td>
           </tr>
           <tr>
             <td class="tr-label-basic">Years:</td>
-            <td class="tr-textbox-basic"><input id="txtYears" type="number" class="input-loan field" /></td>
+            <td class="tr-textbox-basic"><input id="txtYears" type="number" pattern="\d*" class="input-loan field" /></td>
           </tr>
           <tr>
             <th class="tr-label-basic">Monthly:</th>
-            <td class="tr-textbox-basic"><input id="txtMonthly" type="number" class="field-result field" readonly tabindex="-1"/></td>
+            <td class="tr-textbox-basic"><input id="txtMonthly" type="number" pattern="\d*" class="field-result field" readonly tabindex="-1"/></td>
           </tr>
           <tr>
             <th class="tr-label-basic">Total cost:</th>
-            <td class="tr-textbox-basic"><input id="txtTotalCost" type="number" class="field-result field" readonly tabindex="-1"/></td>
+            <td class="tr-textbox-basic"><input id="txtTotalCost" type="number" pattern="\d*" class="field-result field" readonly tabindex="-1"/></td>
           </tr>
         </table>
       </div>
