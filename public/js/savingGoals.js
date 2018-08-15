@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  deviceAdjustment();
   adjustFieldSize();
   $('.input-basic').change(function() {
     $('#txtCurrentBalance').val() !== '' ? $('#txtCurrentBalance').val(spacedNumber(parseFloat($('#txtCurrentBalance').val().replace(/ /g, '')))) : $('#txtCurrentBalance').val('');
@@ -21,10 +22,10 @@ function adjustFieldSize() {
     if ($(this).height() > heightMax) { heightMax = $(this).height(); }
   });
   $('.field').height(heightMax);
-  $('.text-label-basic').each(function() {
-    if ($(this).width() > widthMax) { widthMax = $(this).width(); }
-  });
-  $('.text-label-basic').width(widthMax);
+  //$('.tr-label-basic').each(function() {
+  //  if ($(this).width() > widthMax) { widthMax = $(this).width(); }
+  //});
+  //$('.tr-label-basic').width(widthMax);
 }
 
 function cleanNumber(v) {

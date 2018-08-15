@@ -1,25 +1,32 @@
+html, nav, menu, head, body, foot, form {
+  margin: 0;
+  padding: 0;
+}
 html {
   background: rgba(150, 150, 160, 1);
 }
 nav, body {
   text-align: center;
 }
-section, menu {
-  display: inline-block;
-}
-input, button, .container, .field-result {
+input, button, .headline-box, .field-result {
   border-radius: 3px;
 }
-input, button, .field-result, .text-label-basic {
-  padding: 10px;
-  margin: 5px;
-  font-size: 20px;
+input, button, .headline-box, .field-result, .tr-label-basic {
+  font-family: Rajdhani;
   border: none;
   color: white;
-  font-family: Rajdhani;
+}
+button, .headline-box, .tr-label-basic {
+  padding: 10px;
+}
+input, .headline-box, .field-result, .tr-label-basic {
+  margin: 5px;
+}
+.headline-box {
+  border: 1px solid white;
+  padding: 5px;
 }
 input, .field-result {
-  width: 100px;
   outline: none;
   text-align: left;
 }
@@ -38,8 +45,72 @@ button {
 }
 .container, button {
   background: rgba(80, 80, 90, 1);
+}
+.container {
+  padding: 3px;
+  margin: 5px;
+  display: block;
+}
+.tr-label-basic {
+  text-align: right;
+}
+/* === Mobile === */
+.button-mobile {
+  font-size: 4em;
+}
+.menu-mobile {
+  display: block;
+}
+.section-mobile {
+  display: block;
+}
+.table-mobile {
+  font-size: 3em;
+}
+.container-mobile {
+  /* */
+}
+.field-mobile {
+  width: 100%;
+  font-size: 1em;
+  padding: 0.25em;
+}
+.headline-box-mobile {
+  font-size: 4em;
+}
+.tr-label-mobile {
+  width: 35%;
+}
+.tr-textbox-mobile {
+  width: 60%;
+}
+/* === Desktop === */
+.button-desktop {
   margin: 5px;
 }
-.text-label-basic {
-  text-align: right;
+.menu-desktop {
+  display: inline-block;
+}
+.section-desktop {
+  display: inline-block;
+}
+.table-desktop {
+  font-size: 18px;
+}
+.container-desktop {
+  border-radius: 3px;
+}
+.field-desktop {
+  width: 120px;
+  font-size: 20px;
+  padding: 10px;
+}
+.headline-box-desktop {
+  font-size: 20px;
+}
+.tr-label-desktop {
+  width: 90px;
+}
+.tr-textbox-desktop {
+
 }
