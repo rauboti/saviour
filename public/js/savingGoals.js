@@ -22,10 +22,6 @@ function adjustFieldSize() {
     if ($(this).height() > heightMax) { heightMax = $(this).height(); }
   });
   $('.field').height(heightMax);
-  //$('.tr-label-basic').each(function() {
-  //  if ($(this).width() > widthMax) { widthMax = $(this).width(); }
-  //});
-  //$('.tr-label-basic').width(widthMax);
 }
 
 function cleanNumber(v) {
