@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('.input-basic').change(function() {
     $('#txtCurrentBalance').val() !== '' ? $('#txtCurrentBalance').val(spacedNumber(parseFloat($('#txtCurrentBalance').val().replace(/ /g, '')))) : $('#txtCurrentBalance').val('');
     $('#txtGoal').val() !== '' ? $('#txtGoal').val(spacedNumber(parseFloat($('#txtGoal').val().replace(/ /g, '')))) : $('#txtGoal').val('');
-    $('#txtCurrentBalance').val() !== '' && $('#txtGoal').val() !== '' ? $('#txtRemainingBalance').text(spacedNumber(parseFloat($('#txtGoal').val().replace(/ /g, '')) - parseFloat($('#txtCurrentBalance').val().replace(/ /g, '')))) : $('#txtRemainingBalance').text('');
+    $('#txtCurrentBalance').val() !== '' && $('#txtGoal').val() !== '' ? $('#txtRemainingBalance').val(spacedNumber(parseFloat($('#txtGoal').val().replace(/ /g, '')) - parseFloat($('#txtCurrentBalance').val().replace(/ /g, '')))) : $('#txtRemainingBalance').val('');
     installments();
   });
   $('.input-loan').change(function() {
@@ -42,7 +42,7 @@ function installments() {
     var years;
     var money;
 
-    $('#txtRemainingBalance').text() == '' || $('#txtRemainingBalance').text() == 'NaN' ? money = 0 : money = cleanNumber($('#txtRemainingBalance').text().replace(/ /g, ''));
+    $('#txtRemainingBalance').val() == '' || $('#txtRemainingBalance').val() == 'NaN' ? money = 0 : money = cleanNumber($('#txtRemainingBalance').val().replace(/ /g, ''));
     $('#txtInterest').val() == '' || $('#txtInterest').val() == 'NaN' ? interest = 0 : interest = cleanNumber($('#txtInterest').val())/100;
     $('#txtYears').val() == '' ? years = 0 : years = cleanNumber($('#txtYears').val());
 
@@ -54,11 +54,11 @@ function installments() {
       var payments = (years * 12);
       var monthlyInstallment = (money / payments);
     }
-    $('#txtMonthly').text(spacedNumber(monthlyInstallment.toFixed(2)));
-    $('#txtTotalCost').text(spacedNumber(parseFloat((monthlyInstallment * payments) + parseFloat($('#txtCurrentBalance').val().replace(/ /g, ''))).toFixed(2)));
+    $('#txtMonthly').val(spacedNumber(monthlyInstallment.toFixed(2)));
+    $('#txtTotalCost').val(spacedNumber(parseFloat((monthlyInstallment * payments) + parseFloat($('#txtCurrentBalance').val().replace(/ /g, ''))).toFixed(2)));
   } else {
-    $('#txtMonthly').text('');
-    $('#txtTotalCost').text('');
+    $('#txtMonthly').val('');
+    $('#txtTotalCost').var('');
   }
 }
 
