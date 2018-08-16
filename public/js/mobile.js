@@ -25,22 +25,18 @@ function deviceAdjustment() {
     $('input').addClass('field-mobile');
     $('menu').addClass('menu-mobile');
     $('section').addClass('section-mobile');
-    $('table').addClass('table-mobile');
     $('.container').addClass('container-mobile');
     $('.field-result').addClass('field-mobile');
     $('.headline-box').addClass('headline-box-mobile');
-    $('.tr-label-basic').addClass('tr-label-mobile');
-    $('.tr-textbox-basic').addClass('tr-textbox-mobile');
+    $('.row').addClass('row-mobile');
   } else {
     $('button').addClass('button-desktop');
     $('input').addClass('field-desktop');
     $('menu').addClass('menu-desktop');
     $('section').addClass('section-desktop');
-    $('table').addClass('table-desktop');
     $('.container').addClass('container-desktop');
     $('.field-result').addClass('field-desktop');
     $('.headline-box').addClass('headline-box-desktop');
-    $('.tr-label-basic').addClass('tr-label-desktop');
-    $('.tr-textbox-basic').addClass('tr-textbox-desktop');
+    $('.row').addClass('row-desktop');
   }
 }

@@ -2,42 +2,34 @@ html, nav, menu, head, body, foot, form {
   margin: 0;
   padding: 0;
 }
-html {
+html, input {
   background: rgba(150, 150, 160, 1);
 }
 nav, body {
   text-align: center;
 }
-input, button, .headline-box, .field-result {
-  border-radius: 3px;
+button {
+  cursor: pointer;
 }
-input, button, .headline-box, .field-result, .tr-label-basic {
-  font-family: Rajdhani;
-  border: none;
-  color: white;
-}
-button, .headline-box, .tr-label-basic {
-  padding: 10px;
-}
-input, .headline-box, .field-result, .tr-label-basic {
-  margin: 5px;
-}
-.headline-box {
-  border: 1px solid white;
-  padding: 5px;
-}
-input, .field-result {
+input {
   outline: none;
   text-align: left;
 }
-input {
-  background: rgba(150, 150, 160, 1);
+input, button, .headline-box {
+  border-radius: 3px;
+  font-family: Rajdhani;
+  border: none;
+  color: white;
+  margin: 5px;
+}
+button, .headline-box {
+  padding: 10px;
+}
+.headline-box {
+  border: 1px solid white;
 }
 .field-result {
   background: rgba(150, 150, 160, .2);
-}
-button {
-  cursor: pointer;
 }
 .menuButton {
   display: block;
@@ -51,12 +43,24 @@ button {
   margin: 5px;
   display: block;
 }
-.tr-label-basic {
+.row {
+  display: block;
+  color: white;
+  font-family: Rajdhani;
+}
+.col-40, .col-60 {
+  display: inline-block;
+}
+.col-40 {
+  width: 35%;
   text-align: right;
+}
+.col-60 {
+  width: 55%;
 }
 /* === Mobile === */
 .button-mobile {
-  font-size: 4em;
+  font-size: 5em;
 }
 .menu-mobile {
   display: block;
@@ -64,25 +68,19 @@ button {
 .section-mobile {
   display: block;
 }
-.table-mobile {
-  font-size: 3em;
-}
 .container-mobile {
   /* */
 }
 .field-mobile {
-  
+
   font-size: 1em;
   padding: 0.25em;
 }
 .headline-box-mobile {
   font-size: 4em;
 }
-.tr-label-mobile {
-  width: 35%;
-}
-.tr-textbox-mobile {
-  width: 45%;
+.row-mobile {
+  font-size: 3em;
 }
 /* === Desktop === */
 .button-desktop {
@@ -94,11 +92,9 @@ button {
 .section-desktop {
   display: inline-block;
 }
-.table-desktop {
-  font-size: 18px;
-}
 .container-desktop {
   border-radius: 3px;
+  width: 300px;
 }
 .field-desktop {
   width: 120px;
@@ -108,9 +104,6 @@ button {
 .headline-box-desktop {
   font-size: 20px;
 }
-.tr-label-desktop {
-  width: 90px;
-}
-.tr-textbox-desktop {
-
+.row-desktop {
+  font-size: 18px;
 }
